@@ -9,15 +9,38 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: rgb(248, 249, 250);
-    }
-  </style>
+
 </head>
 
 <body>
-  <main>
+  <main class="main-login">
+    <form onsubmit="return validar(event);">
+      <img class="mb-4 logo" src="img/login.png" alt="Logo jovenes a programar e-mercado" width="350" height="153">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Nombre de usuario">
+        <label for="floatingInput" class="custom-label">
+          <img src="img/user.png" alt="Icono de usuario" class="input-icon"> 
+          Usuario
+        </label>
+      
+        <div id="usuario-error" class="campo-error"></div>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="pass">
+        <label for="floatingPassword" class="custom-label">
+        <img src="img/pass.png" alt="Icono de password" class="input-icon">
+        Contraseña
+      </label>
+      
+        <div id="contraseña-error" class="campo-error"></div>
+      </div>
+      <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Recordar
+      </label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+    </form>
 
 
 

@@ -37,7 +37,7 @@ nav a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
@@ -82,7 +82,7 @@ footer p {
 }
 
 .site-header .dropdown-menu a {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .dropzone {
@@ -187,4 +187,137 @@ a.custom-card:hover {
 
 .checked {
   color: orange;
+}
+
+
+/* Mis estilos */
+
+.products-container {
+  display: flex; 
+  flex-wrap: nowrap; 
+  justify-content: center;
+  gap: 5px; 
+
+}
+
+.product-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center; 
+  box-shadow: 0px 10px 15px rgba(255, 192, 110, 0.308); 
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  height: 400px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.product-card img {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin-top: 5px ;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(100, 30, 2, 0.5); 
+}
+
+.product-card .product-desc{
+  color: rgb(0, 0, 0); 
+  margin-top: 1px;
+}
+
+.product-card .product-sold {
+  color: rgb(104, 67, 0); 
+  margin-top: 1px; 
+  margin-bottom: 5px;
+  
+}
+
+.product-card .product-price{
+  box-shadow: 0px 5px 5px rgba(87, 87, 87, 0.308); 
+  border: none;
+  padding: 5px;
+  color: rgb(104, 67, 0); 
+  margin-bottom: 1px;
+  
+}
+
+.product-card .product-name{
+  margin-top: 1px;
+  
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.form-floating {
+  margin-bottom: 25px;
+}
+.btn-primary {
+  background-color: #ff9419ef;
+  border-color: #c94a00;
+}
+.btn-primary:hover {
+  background-color: #c24e00;
+  border-color: #9e2001;
+}
+
+.main-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ffa52f65;
+}
+
+.mb-4.logo {
+  margin-bottom: 1rem;
+}
+
+.campo-invalido {
+  border-color: red !important;
+}
+
+.campo-error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 12px;
+  color: red;
+  margin-top: 1px;
+}
+
+.custom-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  width: 20px; 
+  height: auto;
+  margin-right: 10px; 
+}
+
+/* Este estilo no me lo toma por bootstrap*/
+.custom-navbar {
+  background-color: orange;
 }
